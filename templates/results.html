@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <p>Prior probabilities</p>
+    <table style="margin-left: auto; margin-right: auto;" border=2>
+    {% for i, j in pri_prob.items() %}
+        <tr>
+            <td>
+                {{i}}
+            </td>
+            <td>
+                {{j}}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    <p>Probabilities for Yes</p>
+    <table style="margin-left: auto; margin-right: auto;" border=2>    
+        {% for i, j in dict1.items() %}
+        <tr>
+            <td>
+                {{i}}
+            </td>
+            <td>
+                {{j}}
+            </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <p>Probabilities for No</p>
+      <table style="margin-left: auto; margin-right: auto;" border=2>    
+        {% for i, j in dict2.items() %}
+        <tr>
+            <td>
+                {{i}}
+            </td>
+            <td>
+                {{j}}
+            </td>
+        </tr>
+        {% endfor %}
+      </table>
+    <hr>
+    <p>Posterior probabilities</p>
+    <table style="margin-left: auto; margin-right: auto;" border=2>
+    {% for i, j in post_prob.items() %}
+        <tr>
+            <td>
+                {{i}}
+            </td>
+            <td>
+                {{j}}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
